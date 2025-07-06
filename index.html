@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoLoMoN</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Sticky Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Solomon</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <!--<li class="nav-item">
+                    <a href="#hero" class="nav-link">Home</a>
+                </li> -->
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About me</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a> 
+                </li>
+                <li class="nav-item">
+                    <a href="blog.html" class="nav-link">Blog</a> 
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-greeting">Hi, I'm SoLoMon</h1>
+                    <div class="hero-headline">
+                        <span class="typing-text" id="typing-text"></span>
+                        <span class="cursor">|</span>
+                    </div>
+                    <p class="hero-description">
+                        Building impactful solutions with AI.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View My Projects</a>
+                        <a href="#contact" class="btn btn-secondary">Let's Talk</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-container">
+                        <img src="portfolio-images/SolomonKoomson.JPG" alt="Solomon" class="profile-img">
+                        <div class="profile-bg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <div class="scroll-indicator">
+                <span>Scroll Down</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Driving the Next Generation of Fintech Innovation</h2>
+                <p class="section-subtitle">Turning AI and No-Code into Solutions that Deliver Impact</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-paragraph">
+                        I'm a passionate product builder and fintech innovator on a mission to transform how people across Africa and the diaspora send, spend, and support their communities. My work sits at the intersection of financial technology and user experience. The goal is to help bring financial services to life in ways that are accessible and impactful.
+                    </p>
+                    <p class="about-paragraph">
+                        Over the years, I’ve led and contributed to <strong>50+ projects</strong> and collaborated with <strong>15+ financial institutions and tech partners</strong>, turning ideas into market-ready solutions. Whether it's through mobile money, remittances, digital banking or user-first product development, my focus is always on delivering measurable impact.
+                        <h3>Current Ventures</h3>
+                        <ul>
+                            <li><strong>Indelible</strong> – A powerful crowdfunding platform that is transforming nature-finance by connecting businesses, institutions and individuals to high-impact biodiversity projects.</li>
+                                
+                            <li><strong>VibeCode Africa</strong> – A growing digital ecosystem that is fueling Africa’s tech talent with AI and no-code tools to make software creation accessible to all.</li> 
+                                
+                            <li><strong>Cend</strong> – A groundbreaking fintech app. More details to be shared later.</li>  
+                        </ul>  
+                    </p>
+                    
+                    <p class="about-paragraph">
+                        My work blends deep fintech expertise with experience working alongside major banks, telecoms, and startups. I specialize in mobile money, agent networks, digital payments, and scalable product design for underserved markets.
+                    </p>
+
+                    <p class="about-paragraph">
+                        If you're looking for a strategic partner and fintech product expert with a bold vision; <strong>let's talk</strong>
+                    </p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">15+</div>
+                        <div class="stat-label">Companies Worked With</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">5+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Innovative solutions that make a difference</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-project="cend">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400&h=250&fit=crop" alt="Cend Fintech App">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Cend</h3>
+                        <p class="project-description">Revolutionary fintech app providing seamless financial services across Africa with AI-powered features.</p>
+                        <div class="project-tags">
+                            <span class="tag">Fintech</span>
+                            <span class="tag">AI</span>
+                            <span class="tag">Mobile</span>
+                        </div>
+                        <a href="#" class="project-link">View Case Study <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="project-card" data-project="vibecode">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop" alt="VibeCode Africa">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">VibeCode Africa</h3>
+                        <p class="project-description">Digital ecosystem empowering African creatives with tools, resources, and opportunities to thrive.</p>
+                        <div class="project-tags">
+                            <span class="tag">Digital Platform</span>
+                            <span class="tag">Creative</span>
+                            <span class="tag">Community</span>
+                        </div>
+                        <a href="#" class="project-link">View Case Study <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="project-card" data-project="indelible">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=400&h=250&fit=crop" alt="Indelible Crowdfunding">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Indelible</h3>
+                        <p class="project-description">Innovative crowdfunding startup connecting visionary projects with passionate supporters.</p>
+                        <div class="project-tags">
+                            <span class="tag">Crowdfunding</span>
+                            <span class="tag">Startup</span>
+                            <span class="tag">Innovation</span>
+                        </div>
+                        <a href="#" class="project-link">View Case Study <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="project-card" data-project="mtn">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1512486130939-2c4f79935e4f?w=400&h=250&fit=crop" alt="MTN Mobile Money">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">MTN Mobile Money Integration</h3>
+                        <p class="project-description">Seamless mobile money integration solutions for businesses across Africa.</p>
+                        <div class="project-tags">
+                            <span class="tag">Mobile Money</span>
+                            <span class="tag">Integration</span>
+                            <span class="tag">API</span>
+                        </div>
+                        <a href="#" class="project-link">View Case Study <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="project-card" data-project="rebalancing">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop" alt="Agent Rebalancing">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Agent Rebalancing Solution</h3>
+                        <p class="project-description">Smart agent rebalancing system optimizing liquidity management for financial services.</p>
+                        <div class="project-tags">
+                            <span class="tag">Fintech</span>
+                            <span class="tag">Optimization</span>
+                            <span class="tag">AI</span>
+                        </div>
+                        <a href="#" class="project-link">View Case Study <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="project-card" data-project="ria2mobile">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1553729459-efe14ef6055d?w=400&h=250&fit=crop" alt="Ria2Mobile">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Ria2Mobile</h3>
+                        <p class="project-description">Streamlined mobile remittance solution connecting families across borders.</p>
+                        <div class="project-tags">
+                            <span class="tag">Remittance</span>
+                            <span class="tag">Mobile</span>
+                            <span class="tag">Cross-border</span>
+                        </div>
+                        <a href="#" class="project-link">View Case Study <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Trusted by Leading Organizations</h2>
+                <p class="section-subtitle">Collaborating with industry pioneers</p>
+            </div>
+            <div class="experience-carousel">
+                <div class="carousel-track" id="carousel-track">
+                    <div class="company-logo">
+                        <img src="///Users/solomonkoomson/Projects/personal-projects/Portfolio/portfolio-images/GN_Bank.jpg" alt="GNBank">
+                    </div>
+                    <div class="company-logo">
+                        <img src="./portfolio-images/GTBank.png" alt="GTBank">
+                    </div>
+                    <div class="company-logo">
+                        <img src="portfolio-images/images.png" alt="FirstBank">
+                    </div>
+                    <div class="company-logo">
+                        <img src="portfolio-images/ATGhana.webp" alt="Millicom">
+                    </div>
+                    <div class="company-logo">
+                        <img src="portfolio-images/telecel.jpg" alt="Telecel">
+                    </div>
+                    <div class="company-logo">
+                        <img src="portfolio-images/bankingly.jpg" alt="Bankingly">
+                    </div>
+                    <!-- Duplicate for seamless loop -->
+                    <div class="company-logo">
+                        <img src="portfolio-images/gh-mtn.webp" alt="MTN Ghana">
+                    </div>
+                    <div class="company-logo">
+                        <img src="portfolio-images/Indelible.png" alt="Indelible">
+                    </div>
+                    <div class="company-logo">
+                        <img src="portfolio-images/ria.webp" alt="Ria">
+                    </div>
+                    <div class="company-logo">
+                        <img src="https://via.placeholder.com/150x80/7C3AED/FFFFFF?text=Millicom" alt="Millicom">
+                    </div>
+                    <div class="company-logo">
+                        <img src="https://via.placeholder.com/150x80/EA580C/FFFFFF?text=Telecel" alt="Telecel">
+                    </div>
+                    <div class="company-logo">
+                        <img src="https://via.placeholder.com/150x80/1D4ED8/FFFFFF?text=Bankingly" alt="Bankingly">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Work Gallery</h2>
+                <p class="section-subtitle">Visual showcase of my design and development work</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-image="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400&h=300&fit=crop">
+                    <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400&h=300&fit=crop" alt="Dashboard Design">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-image="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop" alt="Mobile App Design">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-image="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop" alt="Data Visualization">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-image="https://images.unsplash.com/photo-1542744094-24638eff58bb?w=400&h=300&fit=crop">
+                    <img src="https://images.unsplash.com/photo-1542744094-24638eff58bb?w=400&h=300&fit=crop" alt="Wireframe Design">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-image="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400&h=300&fit=crop">
+                    <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400&h=300&fit=crop" alt="Fintech Interface">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-image="https://images.unsplash.com/photo-1512486130939-2c4f79935e4f?w=400&h=300&fit=crop">
+                    <img src="https://images.unsplash.com/photo-1512486130939-2c4f79935e4f?w=400&h=300&fit=crop" alt="System Architecture">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills & Technologies</h2>
+                <p class="section-subtitle">Tools and technologies I work with</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="category-title">No-Code Platforms</h3>
+                    <div class="skill-badges">
+                        <div class="skill-badge">
+                            <i class="fas fa-bolt"></i>
+                            <span>Bolt</span>
+                        </div>
+                        <div class="skill-badge">
+                            <i class="fas fa-database"></i>
+                            <span>Base44</span>
+                        </div>
+                        <div class="skill-badge">
+                            <i class="fas fa-globe"></i>
+                            <span>Webflow</span>
+                        </div>
+                        <div class="skill-badge">
+                            <i class="fas fa-magic"></i>
+                            <span>Framer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="category-title">Development Tools</h3>
+                    <div class="skill-badges">
+                        <div class="skill-badge">
+                            <i class="fas fa-server"></i>
+                            <span>Supabase</span>
+                        </div>
+                        <div class="skill-badge">
+                            <i class="fas fa-fire"></i>
+                            <span>Firebase</span>
+                        </div>
+                        <div class="skill-badge">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="category-title">Fintech APIs</h3>
+                    <div class="skill-badges">
+                        <div class="skill-badge">
+                            <i class="fas fa-credit-card"></i>
+                            <span>Stripe</span>
+                        </div>
+                        <div class="skill-badge">
+                            <i class="fas fa-money-bill-wave"></i>
+                            <span>Flutterwave</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="category-title">AI & Innovation</h3>
+                    <div class="skill-badges">
+                        <div class="skill-badge">
+                            <i class="fas fa-robot"></i>
+                            <span>ChatGPT</span>
+                        </div>
+                        <div class="skill-badge">
+                            <i class="fas fa-brain"></i>
+                            <span>Claude</span>
+                        </div>
+                        <div class="skill-badge">
+                            <i class="fas fa-image"></i>
+                            <span>ImageGen</span>
+                        </div>
+                        <div class="skill-badge">
+                            <i class="fas fa-video"></i>
+                            <span>D-ID</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Let's Work Together</h2>
+                <p class="section-subtitle">Ready to build something amazing?</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p>I'm always excited to discuss new opportunities and innovative projects. Whether you're looking to build the next big fintech solution or need expertise in no-code development, let's connect!</p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>solkooms@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fab fa-linkedin"></i>
+                            <div>
+                                <h4>LinkedIn</h4>
+                                <p>Connect with me</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fab fa-whatsapp"></i>
+                            <div>
+                                <h4>WhatsApp</h4>
+                                <p>Quick chat</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Your Email</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2025 Solomon. Building the future of fintech, one innovation at a time.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-dribbble"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-close" id="lightbox-close">&times;</span>
+            <img id="lightbox-image" src="" alt="">
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
