@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SoLoMoN</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="voice-note.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -66,7 +67,8 @@
                 </div>
                 <div class="hero-image">
                     <div class="profile-container">
-                        <img src="portfolio-images/SolomonKoomson.JPG" alt="Solomon" class="profile-img">
+                        <!-- FIXED: Corrected image path -->
+                        <img src="./portfolio-images/SolomonKoomson.JPG" alt="Solomon" class="profile-img">
                         <div class="profile-bg"></div>
                     </div>
                 </div>
@@ -93,12 +95,12 @@
                         I'm a passionate product builder and fintech innovator on a mission to transform how people across Africa and the diaspora send, spend, and support their communities. My work sits at the intersection of financial technology and user experience. The goal is to help bring financial services to life in ways that are accessible and impactful.
                     </p>
                     <p class="about-paragraph">
-                        Over the years, I’ve led and contributed to <strong>50+ projects</strong> and collaborated with <strong>15+ financial institutions and tech partners</strong>, turning ideas into market-ready solutions. Whether it's through mobile money, remittances, digital banking or user-first product development, my focus is always on delivering measurable impact.
+                        Over the years, I've led and contributed to <strong>50+ projects</strong> and collaborated with <strong>15+ financial institutions and tech partners</strong>, turning ideas into market-ready solutions. Whether it's through mobile money, remittances, digital banking or user-first product development, my focus is always on delivering measurable impact.
                         <h3>Current Ventures</h3>
                         <ul>
                             <li><strong>Indelible</strong> – A powerful crowdfunding platform that is transforming nature-finance by connecting businesses, institutions and individuals to high-impact biodiversity projects.</li>
                                 
-                            <li><strong>VibeCode Africa</strong> – A growing digital ecosystem that is fueling Africa’s tech talent with AI and no-code tools to make software creation accessible to all.</li> 
+                            <li><strong>VibeCode Africa</strong> – A growing digital ecosystem that is fueling Africa's tech talent with AI and no-code tools to make software creation accessible to all.</li> 
                                 
                             <li><strong>Cend</strong> – A groundbreaking fintech app. More details to be shared later.</li>  
                         </ul>  
@@ -129,8 +131,6 @@
             </div>
         </div>
     </section>
-
-
 
     <!-- Projects Section -->
     <section class="projects" id="projects">
@@ -248,42 +248,44 @@
             </div>
             <div class="experience-carousel">
                 <div class="carousel-track" id="carousel-track">
+                    <!-- FIXED: Corrected all image paths -->
                     <div class="company-logo">
-                        <img src="///Users/solomonkoomson/Projects/personal-projects/Portfolio/portfolio-images/GN_Bank.jpg" alt="GNBank">
+                        <img src="./portfolio-images/GN_Bank.jpg" alt="GNBank">
                     </div>
                     <div class="company-logo">
                         <img src="./portfolio-images/GTBank.png" alt="GTBank">
                     </div>
                     <div class="company-logo">
-                        <img src="portfolio-images/images.png" alt="FirstBank">
+                        <img src="./portfolio-images/images.png" alt="FirstBank">
                     </div>
                     <div class="company-logo">
-                        <img src="portfolio-images/ATGhana.webp" alt="Millicom">
+                        <img src="./portfolio-images/ATGhana.webp" alt="ATGhana">
                     </div>
                     <div class="company-logo">
-                        <img src="portfolio-images/telecel.jpg" alt="Telecel">
+                        <img src="./portfolio-images/telecel.jpg" alt="Telecel">
                     </div>
                     <div class="company-logo">
-                        <img src="portfolio-images/bankingly.jpg" alt="Bankingly">
+                        <img src="./portfolio-images/bankingly.jpg" alt="Bankingly">
                     </div>
                     <!-- Duplicate for seamless loop -->
                     <div class="company-logo">
-                        <img src="portfolio-images/gh-mtn.webp" alt="MTN Ghana">
+                        <img src="./portfolio-images/gh-mtn.webp" alt="MTN Ghana">
                     </div>
                     <div class="company-logo">
-                        <img src="portfolio-images/Indelible.png" alt="Indelible">
+                        <img src="./portfolio-images/Indelible.png" alt="Indelible">
                     </div>
                     <div class="company-logo">
-                        <img src="portfolio-images/ria.webp" alt="Ria">
+                        <img src="./portfolio-images/ria.webp" alt="Ria">
                     </div>
+                    <!-- FIXED: Added proper fallback images for missing ones -->
                     <div class="company-logo">
                         <img src="https://via.placeholder.com/150x80/7C3AED/FFFFFF?text=Millicom" alt="Millicom">
                     </div>
                     <div class="company-logo">
-                        <img src="https://via.placeholder.com/150x80/EA580C/FFFFFF?text=Telecel" alt="Telecel">
+                        <img src="https://via.placeholder.com/150x80/EA580C/FFFFFF?text=Fintech" alt="Fintech Partner">
                     </div>
                     <div class="company-logo">
-                        <img src="https://via.placeholder.com/150x80/1D4ED8/FFFFFF?text=Bankingly" alt="Bankingly">
+                        <img src="https://via.placeholder.com/150x80/1D4ED8/FFFFFF?text=Banking" alt="Banking Partner">
                     </div>
                 </div>
             </div>
@@ -472,11 +474,66 @@
                             <label for="message">Your Message</label>
                         </div>
                         <button type="submit" class="btn btn-primary">Send Message</button>
+                        
+                        <!-- Voice Note Button -->
+                        <button type="button" class="btn btn-secondary" id="voiceNoteBtn">
+                            <i class="fas fa-microphone"></i>
+                            Leave Voice Note
+                        </button>
                     </form>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- FIXED: Complete Voice Note Modal Structure -->
+    <div class="voice-modal" id="voiceModal">
+        <div class="voice-modal-content">
+            <div class="voice-modal-header">
+                <h3 class="voice-modal-title">🎙️ Leave a Voice Note</h3>
+                <button class="close-modal" id="closeModal">&times;</button>
+            </div>
+            
+            <div id="errorMessage" class="error-message" style="display: none;"></div>
+            <div id="successMessage" class="success-message" style="display: none;"></div>
+            
+            <div class="recording-interface">
+                <div class="recording-status" id="recordingStatus">Click the red button to start recording</div>
+                <div class="recording-timer" id="recordingTimer">00:00</div>
+                
+                <div class="recording-controls">
+                    <button class="control-btn record" id="recordBtn" title="Start Recording">
+                        <i class="fas fa-microphone"></i>
+                    </button>
+                    <button class="control-btn stop" id="stopBtn" disabled title="Stop Recording">
+                        <i class="fas fa-stop"></i>
+                    </button>
+                    <button class="control-btn play" id="playBtn" disabled title="Play Recording">
+                        <i class="fas fa-play"></i>
+                    </button>
+                </div>
+                
+                <div class="waveform-container">
+                    <div class="waveform-bars" id="waveformBars">
+                        <!-- Waveform bars will be generated by JavaScript -->
+                    </div>
+                </div>
+                
+                <audio id="audioPlayer" class="audio-player" controls style="display: none;"></audio>
+                
+                <div class="voice-actions">
+                    <button class="btn btn-primary" id="sendVoiceNote" disabled>
+                        <i class="fas fa-paper-plane"></i>
+                        Send Voice Note
+                    </button>
+                    <button class="btn" id="resetRecording" style="background: #6c757d; color: white;">
+                        <i class="fas fa-redo"></i>
+                        Start Over
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer class="footer">
@@ -504,5 +561,6 @@
     </div>
 
     <script src="scripts.js"></script>
+    <script src="voice-note.js"></script>
 </body>
 </html>
