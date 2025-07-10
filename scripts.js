@@ -11,11 +11,11 @@ const galleryItems = document.querySelectorAll('.gallery-item');
 
 // Typing Animation
 const texts = [
-    "Product Manager & Web Developer.",
+    "Product Manager & Web Developer",
     "Over 10+ years of fintech product leadership",
     "Crafting AI-powered solutions that work",
     "Turning ideas into scalable fintech MVPs",
-    "Building to empower, simplify and scale."
+    "Building to empower, simplify and scale"
 ];
 
 let textIndex = 0;
